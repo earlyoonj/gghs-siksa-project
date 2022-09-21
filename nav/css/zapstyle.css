@@ -1,0 +1,533 @@
+html {
+  /*  background-image: url("../../resources/img/zapan/zap_bg.png");*/
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e81f1f;
+}
+
+
+
+
+/*-----버튼찰칵----*/
+
+
+/*-----버블이 덮개-----*/
+.btn-gong .cover {
+    background-image: url("../../resources/img/cover/coin_snk.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.btn-sb .cover {
+    background-image: url("../../resources/img/cover/coin_brd.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.btn-ju .cover {
+    background-image: url("../../resources/img/cover/coin_etc.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.btn-rot .cover {
+    background-image: url("../../resources/img/cover/coin_pop.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.btn-br .cover {
+    background-image: url("../../resources/img/cover/coin_ion.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.btn-coo .cover {
+    background-image: url("../../resources/img/cover/coin_etc.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/*------버블이들 데코----------*/
+
+.testimonial-feature {
+    background-color: #f1f1f1;
+}
+
+.btn-gong {
+    background-image: url("../../resources/img/zapan");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.btn-sb {
+    background-image: url("../../resources/img/zapan");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.btn-ju {
+    background-image: url("../../resources/img/zapan");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.btn-rot {
+    background-image: url("../../resources/img/zapan");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.btn-br {
+    background-image: url("../../resources/img/zapan");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.btn-coo {
+    background-image: url("../../resources/img/zapan");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+
+/*-----------배경이미지배치-------------*/
+
+.background {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left, .center .right {
+    display: inline-block;
+}
+
+.left, .right {
+    width: 17%;
+    height: 100%;
+    background-color: #AD0000;
+    
+}
+
+.left {
+    position: relative;
+    left: 0px;
+}
+
+.right {
+    position: absolute;
+    right: 0px;
+}
+
+.center {
+    position: absolute;
+    display: flex;
+    left: 17%;
+    width: 66%;
+    height: 100%;
+}
+
+.top {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 15%;
+    background-image: url("../../resources/img/zapan/zaptitle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45% 55%;
+}
+
+.mid {
+    top: 15%;
+    height: 70%;
+    width: 100%;
+    background-image: url("../../resources/img/zapan/jinyeol.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70% 90%;
+}
+
+.blank {
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    left: 0px;
+}
+
+.coin {
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    right: 0px;
+    text-align: center;
+}
+
+.coin_input{
+    display: inline-block;
+    width: 13vh;
+    height: 13vh;
+    margin-top: 60%;
+    border-radius: 100%;
+    background-color: #727272;
+    background-image: url("../../resources/img/zapan/slit.png");
+    background-size: 100%;
+    background-position: center;
+    justify-content: center;
+}
+
+.slit {
+    width: 100%;
+    height: 1vh;
+}
+
+.coin_return{
+    display: inline-block;
+    width: 13vh;
+    height: 13vh;
+    margin-top: 10%;
+    border-radius: 100%;
+    background-color: #727272;
+}
+
+/*----버튼 내비게이션-------*/
+@keyframes btnR{
+    to{
+        transform: rotate(10deg);
+    }
+}
+
+
+.btn {
+    position: absolute;
+    left: 33%;
+    width: 40%;
+    z-index: 2;
+    transition: 0.3s all;
+}
+
+.btnmove{
+    
+    animation-name: btnR;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+}
+
+.btn-45deg {
+    transform: rotate(45deg);
+}
+
+.first {
+    background-image: url("../../resources/img/nav_first.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.dis {
+    background-image: url("../../resources/img/nav_dis.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.sik {
+    background-image: url("../../resources/img/nav_sik.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.nav-box {
+    display: inline-block;
+    width: 80%;
+    height: 16%;
+    margin-top: 10%;
+    background-image: url("../../resources/img/zapan/coinav.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.nav {
+    justify-content: center;
+    position: relative;
+    top: -21%;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    z-index: 2;
+    transition: 0.2s all;
+    opacity: 0;
+}
+
+.nav-drop .nav {
+    opacity: 1;
+    margin-top: 40%;
+}
+
+.gong .nav, .sb .nav, .ju .nav, .rot .nav, .br .nav, .coo .nav  {
+    opacity: 0;
+    transition: 0.5s all;
+}
+
+.nav-btn {
+    top: 0px;
+    background-color: #c9c9c9;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 3px solid darkgray;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    background-position: center;
+    color: darkgray;
+    font-size: 0.8rem;
+    transition: 0.3s all;
+}
+
+.nav-btn:hover {
+    overflow: hidden;
+    filter: brightness(0.9);
+}
+
+.nav-btn:active {
+    filter: brightness(0.8);
+    border-bottom: 0px;
+    transform: translateY(3px);
+    
+}
+
+
+.gong .btn, .sb .btn, .ju .btn, .rot .btn, .br .btn, .coo .btn  {
+    opacity: 0;
+    transition: 0.5s all;
+}
+
+/*--------아래 음료수 달캉--------*/
+
+.tom {
+    
+    position: absolute;
+    display: block;
+    background-image: url("../../resources/img/zapan/drinkout.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 60% 100%;
+    width: 100%;
+    height: 15%;
+    bottom: 0px;
+}
+
+/*-----컨텐츠-----*/
+.detail_group{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.g{
+    display: inline-block;
+    margin: 3%;
+    width: 10%;
+}
+
+.g1{
+    background-image: url("../../resources/img/food/zap/mizz.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.g2{
+    background-image: url("../../resources/img/food/zap/cancho.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.g3{
+    background-image: url("../../resources/img/food/zap/seri.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.g4{
+    background-image: url("../../resources/img/food/zap/chip.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.g5{
+    background-image: url("../../resources/img/food/zap/push.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.g6{
+    background-image: url("../../resources/img/food/zap/ppop.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.b2{
+    background-image: url("../../resources/img/food/zap/lovely.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.b3{
+    background-image: url("../../resources/img/food/zap/sobor.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.b4{
+    background-image: url("../../resources/img/food/zap/croket.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.b5{
+    background-image: url("../../resources/img/food/zap/muzi.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.e3{
+    background-image: url("../../resources/img/food/zap/honey.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.p1{
+    background-image: url("../../resources/img/food/zap/spk_bok.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.p2{
+    background-image: url("../../resources/img/food/zap/spk_grape.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.p3{
+    background-image: url("../../resources/img/food/zap/spk_apple.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.p4{
+    background-image: url("../../resources/img/food/zap/spk_mango.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.p6{
+    background-image: url("../../resources/img/food/zap/narang.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.p5{
+    background-image: url("../../resources/img/food/zap/spk_green.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.i1{
+    background-image: url("../../resources/img/food/zap/bok.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.i2{
+    background-image: url("../../resources/img/food/zap/aqua.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.i3{
+    background-image: url("../../resources/img/food/zap/lipcan.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.i4{
+    background-image: url("../../resources/img/food/zap/mangococo.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.i5{
+    background-image: url("../../resources/img/food/zap/oksoo.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.i6{
+    background-image: url("../../resources/img/food/zap/aqua.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.i2{
+    background-image: url("../../resources/img/food/zap/lemon.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.o3{
+    background-image: url("../../resources/img/food/zap/choco.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}

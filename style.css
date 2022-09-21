@@ -1,0 +1,422 @@
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
+@import url('https://cdn.rawgit.com/singihae/Webfonts/master/style.css');
+
+
+body{
+    margin: 0;
+    background-color: #fffcd2;
+    background-image: url("./resources/img/main/bg-01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.col-8 {
+    padding-left: 18px;
+    padding-right: 18px;
+    width: 66.66666667%;
+    float: left;
+  }
+
+.col-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  
+.col-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+.main {
+    position: relative;
+    margin-left: 3%;
+    overflow: hidden;
+    width: 50vw;
+    height: 100%;
+}
+
+
+.tab {
+    background-color: #fff; 
+    border-radius: 40px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #888;
+    -webkit-font-smoothing: antialiased;
+}
+.tabs {
+  padding-left: 0;
+  display: table;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+}
+
+
+video {
+    border-left: 3px solid #847474;
+}
+
+.tabs li {
+  display: inline-block;
+  line-height: 30px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 50px;
+}
+
+.tabs a {
+  background-color: #eff0f2;
+  border-bottom: 1px solid #fff;
+  color: #888;
+  font-weight: 500;
+  display: block;
+  letter-spacing: 0;
+  outline: none;
+  padding: 0 20px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid #87d3b7;
+}
+
+.tabs_item {
+  display: none;
+  padding: 10px 0 ;
+  
+}
+
+.tabs_item h4 {
+  font-weight: bold;
+  color: #87d3b7;
+  font-size: 1.7rem;
+}
+
+
+.tabs_item:first-child {
+  display: block;
+}
+
+.menu {
+    font-size : 1.4rem;
+}
+
+.menu > h5 {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.menu > p {
+    font-size : 0.9rem;
+    margin-right: 5vw;
+    margin-top: 0;
+}
+
+.current a {
+  color: #fff;
+  background: #87d3b7;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin: 5px;
+    font-size: 2.0rem;
+    font-family:'BM HANNA','배달의민족 한나', sans-serif;
+}
+
+h2 {
+    margin: 0;
+}
+h4 {
+    display: inline-block;
+    margin: 0;
+}
+
+p {
+    font-size: 0.8rem;
+    display: inline-block;
+    text-align: right;
+}
+
+h5 {
+    display: block;
+    margin: 0;
+}
+
+.sikdan {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.tray{
+    position: fixed;
+    left: 35vw;
+    bottom: 0;
+    width: 30vw;
+    height: 35vh;
+    display: inline-block;
+    background-image: url("./resources/img/main/tray.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat
+}
+
+.nav {
+    background-color: #fffcd2;
+    display: flex;
+    width: 80vw;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.nav-item{
+    display: inline;
+    width: 15vw;
+    height: 30vh;
+    margin-top: 3.5vh;
+    margin-right: 20px;
+    color: darkgrey;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    background-position: center;
+    color: #fffcd2;
+    padding-top: 20px;
+    font-size: 1.8rem;
+    font-family:'BM HANNA','배달의민족 한나', sans-serif;
+}
+
+.nav-item:hover{
+    transform: scale(1.3) rotate(360deg);
+    transition: all 1s;
+    color: #938c7d;
+}
+
+.hui {
+    background-image: url("./resources/img/main/hui.png");
+}
+
+.sik {
+    background-image: url("./resources/img/main/sik.png");
+}
+
+.dis {
+    background-image: url("./resources/img/main/dis.png");
+}
+
+.swipe{
+    transform: translateY(10%);
+    position: absolute;
+    bottom: 0;
+    left: 90vw;
+    display: flex;
+}
+
+@keyframes handmove {
+    to{
+        transform: translateY(20px);
+    }
+}
+
+.hand {
+    width: 100%;
+    height: 100%;
+    transform: translateY(40px);
+    animation-name: handmove;
+    animation-timing-function:ease-in-out;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.hand{
+    width: 10vw;
+    height: 45vh;
+    background-image: url("./resources/img/main/hand.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.hand:hover {
+    cursor:pointer;
+    transition: 0.3s;
+    animation-name: loading;
+    animation-timing-function:ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.hand:active {
+    cursor:wait;
+}
+
+.off {
+    transform: translate(0%, 20%);
+    transition: 1.8s;
+   /* animation-name: handup;
+    animation-duration: 1.5s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;*/
+}
+
+.on {     
+    transform: translate(-78%, 20%);
+    transition: 1.8s;
+/*    animation-name: handup;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function:ease-in-out;
+*/}
+
+.pop {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 10px;
+    width: 50px;
+    height: 35px;
+    padding: 2px;
+    background-color: #79cbce;
+    border-radius: 100px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.2s;
+}
+
+.pop:hover {
+    filter: brightness(0.8);
+}
+
+.up {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 1);
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.up > div {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 16px;
+    color: #fff;
+    text-align: center;
+	overflow: auto;	
+    font-size: 1.5rem;
+}
+
+
+.up > div > p {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #c7c7c7;
+}
+
+.up:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.close {
+    width: 72px;
+    height: 72px;
+    line-height: 72px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    z-index: 10;
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.close:hover {
+    color:black;
+}
+
+.close:after {
+    position: absolute !important;
+    content: "";
+    width: 65px;
+    height: 65px;
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    right: 13.5px;
+    top: 13.5px;
+    background-color:white;
+    visibility: hidden;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    transition: all 0.4s ease;
+    opacity: 1\9;
+    visibility: visible;
+    display: none\9;
+    transform: scale(0.5,0.5);
+    z-index: -1;
+    transition: all 0.2s ease;
+}
+
+.close:hover:after {
+    visibility: visible;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    display: block\9;
+    transform: scale(1,1);
+}
+
+h2{
+    margin-top: 15%
+}
+
+
+.pbottom {
+    margin-bottom: 15%;
+}
+
+.last{
+    padding-bottom: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bgm {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.judgebtn{
+    margin: 0;
+    padding: 0;
+}

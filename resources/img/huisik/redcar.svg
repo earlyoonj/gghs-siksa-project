@@ -1,0 +1,19 @@
+<svg id="redcar" data-name="redcar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178 107.31">
+    <defs>
+        <style>
+            .cls-1{fill:#bc0000;}.cls-2{fill:#ed0606;}.cls-3{fill:#edff00;}.cls-4{fill:#40dbff;}
+        </style>
+    </defs>
+    <title>redcar</title>
+    <g id="redcar">
+        <ellipse cx="32" cy="100.5" rx="15" ry="6.81"/>
+        <ellipse cx="163" cy="6.81" rx="15" ry="6.81"/>
+        <ellipse cx="163" cy="98.81" rx="15" ry="6.81"/>
+        <ellipse cx="32" cy="6.81" rx="15" ry="6.81"/>
+        <rect class="cls-1" y="5.5" width="178" height="95" rx="27" ry="27"/>
+        <rect class="cls-2" x="11.52" y="13.62" width="112.48" height="78.77" rx="27" ry="27"/>
+        <ellipse class="cls-3" cx="172.24" cy="21.75" rx="5.76" ry="10.75"/>
+        <ellipse class="cls-3" cx="172.24" cy="88.75" rx="5.76" ry="10.75"/>
+        <rect class="cls-4" x="128" y="21" width="29" height="67.75" rx="14.5" ry="14.5"/>
+    </g>
+</svg>

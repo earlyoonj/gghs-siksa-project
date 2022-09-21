@@ -1,0 +1,269 @@
+
+html {
+    background-color: #81C163;
+    background-image: url("../../resources/img/dessert/disbg.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*-----버튼 덮개-----*/
+.btn-gong .cover {
+    background-image: url("../../resources/img/cover/mat_gong.png");
+    background-position: center;
+    background-size: 98%;
+    background-repeat: no-repeat;
+}
+
+.btn-sb .cover {
+    background-image: url("../../resources/img/cover/mat_sb.png");
+    background-position: center;
+    background-size: 98%;
+    background-repeat: no-repeat;
+}
+
+.btn-ju .cover {
+    background-image: url("../../resources/img/cover/mat_jui.png");
+    background-position: center;
+    background-size: 98%;
+    background-repeat: no-repeat;
+}
+
+.btn-rot .cover {
+    background-image: url("../../resources/img/cover/mat_rot.png");
+    background-position: center;
+    background-size: 98%;
+    background-repeat: no-repeat;
+}
+
+.btn-br .cover {
+    background-image: url("../../resources/img/cover/mat_br.png");
+    background-position: center;
+    background-size: 98%;
+    background-repeat: no-repeat;
+}
+
+.btn-coo .cover {
+    background-image: url("../../resources/img/cover/mat_coo.png");
+    background-position: center;
+    background-size: 98%;
+    background-repeat: no-repeat;
+}
+
+/*-----버튼 배경-----*/
+
+.btn-gong {
+    background-image: url("../../resources/img/dessert/icon_gong.png");
+    background-position: center;
+    background-size: 98%;
+    background-repeat: no-repeat;
+}
+
+.btn-sb {
+    background-image: url("../../resources/img/dessert/icon_sb.png");
+    background-position: center;
+    background-size: 98%;
+    background-repeat: no-repeat;
+}
+
+.btn-ju {
+    background-image: url("../../resources/img/dessert/icon_jui.png");
+    background-position: center;
+    background-size: 98%;
+    background-repeat: no-repeat;
+}
+
+.btn-rot {
+    background-image: url("../../resources/img/dessert/icon_rot.png");
+    background-position: center;
+    background-size: 98%;
+    background-repeat: no-repeat;
+}
+
+.btn-br {
+    background-image: url("../../resources/img/dessert/icon_br.png");
+    background-position: center;
+    background-size: 98%;
+    background-repeat: no-repeat;
+}
+
+.btn-coo {
+    background-image: url("../../resources/img/dessert/icon_coo.png");
+    background-position: center;
+    background-size: 98%;
+    background-repeat: no-repeat;
+}
+
+
+.topleft{
+    position: relative;
+    width: 25vw;
+    height: 30vh;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.bflower {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    width: 15%;
+    transition: all 1.5s;
+}
+
+.bflower:hover{
+    transform: scale(1.2) rotate(360deg);
+}
+
+.bbody {
+    position: absolute;
+    bottom: 0px;
+    width: 12%;
+    right: 2%;
+    z-index: -2;
+}
+
+.tomright{
+    position: fixed;
+    width: 25vw;
+    height: 30vh;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+}
+
+.yflower {
+    position: absolute;
+    left: 0;
+    width: 15%;
+    transition: all 1.5s;
+}
+
+.yflower:hover{
+    transform: scale(1.2) rotate(360deg);
+}
+
+.ybody {
+    position: absolute;
+    top: 13%;
+    width: 12%;
+    left: 1%;
+    z-index: -2;
+}
+
+.topright {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30vw;
+    height: 35vh;
+}
+
+.bascontainer {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 70%;
+    bottom: 0;
+}
+
+.basket {
+    position: absolute;
+    z-index: 3;
+    width: 90%;
+}
+
+@keyframes openbas{
+    to{
+        transform: rotate(-10deg);
+    }
+}
+
+.open {
+    position: absolute;
+    width: 100%;
+    right: 1%;
+    top: -20%;
+    z-index: 3;
+    transition: all 1s;
+}
+
+.openbas{
+    animation-name: openbas;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+.agroup {
+    display: flex;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    transition: 1s all;
+    z-index: 1;
+    transform: scale(0.7);
+}
+
+.out {
+    transform: translateX(80%) scale(0.7);
+}
+
+.agroup > a {
+    display: inline-block;
+    width: 50%;
+}
+
+
+.agroup > a:hover {
+    filter: brightness(0.8);
+    transition: 0.3s all;
+    }
+
+.agroup > a:active{
+    border-bottom: 0px;
+    transform: translateY(3px);
+    transition: 0.2s all;
+}
+
+.out-active {
+    transform: rotate(-40deg) translate(0px, 0px);
+    transition: all 1s;
+}
+
+.matcontainer{
+    position: fixed;
+    top: 0px;
+    background-image: url("../../resources/img/dessert/mat.svg");
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.mat {
+    position: absolute;
+    width: 100%;
+    
+}
+
+.apple {
+    background-image: url("../../resources/img/dessert/apple.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.lemon {
+    background-image: url("../../resources/img/dessert/lemon.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.grape {
+    background-image: url("../../resources/img/dessert/grape.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
